@@ -1,19 +1,19 @@
 # tic-tac-toe-readme
 
 **Game is in progress.** This is open to ANYONE to play the next move. That's
-the point. :wave: It's your turn! Move a white (hollow) piece.
+the point. :wave: It's your turn! Move a 'X' piece.
 
-|       |             A              |             B              |             C              |
-| ----- | :------------------------: | :------------------------: | :------------------------: |
+||A|B|C|
+|-|:-:|:-:|:-:|
 | **1** | ![](./images/green/1.png)  | ![](./images/green/2.png)  | ![](./images/green/1.png)  |
 | **2** | ![](./images/yellow/1.png) | ![](./images/yellow/2.png) | ![](./images/yellow/1.png) |
 | **3** | ![](./images/green/1.png)  | ![](./images/green/2.png)  | ![](./images/green/1.png)  |
 
-#### **WHITE (hollow):** It's your move... to choose _where_ to move...
+#### **X:** It's your move... to choose _where_ to move...
 
-| FROM   | TO - _just click one of the links_ :)                                                                                                                                                                                                                                                                                                           |
-| ------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **A1** | [A2](https://github.com/timburgan/timburgan/issues/new?title=chess%7Cmove%7Ca1a2%7C25535&body=Just+push+%27Submit+new+issue%27.+You+don%27t+need+to+do+anything+else.) , [A3](https://github.com/timburgan/timburgan/issues/new?title=chess%7Cmove%7Ca1a3%7C25535&body=Just+push+%27Submit+new+issue%27.+You+don%27t+need+to+do+anything+else.) |
+|No.|TO - _just click one of the links_ :)|
+|-|-|
+|**1**|[A2](https://github.com/timburgan/timburgan/issues/new?title=chess%7Cmove%7Ca1a2%7C25535&body=Just+push+%27Submit+new+issue%27.+You+don%27t+need+to+do+anything+else.)|
 
 Ask a friend to take the next move:
 [Share on Twitter...](https://twitter.com/share?text=I'm+playing+tic+tac+toe+on+a+GitHub+Repo+Readme!+Can+you+please+take+the+next+move+at+https://github.com/tanishq-singh-2301/tic-tac-toe-readme)
@@ -33,9 +33,9 @@ text _cc @timburgan_.
 
 **Moves history, this game**
 
-| No. | Move | Who                                                             |
-| --- | ---- | --------------------------------------------------------------- |
-| 1   | A1   | [@trekab](https://github.com/trekab)                            |
+|No.|Move|Who|
+|-|-|-|
+|1|A1|[@trekab](https://github.com/trekab)|
 | 2   | B1   | [@AI](https://github.com/tanishq-singh-2301/tic-tac-toe-readme) |
 | 3   | C2   | [@Mmark94](https://github.com/Mmark94)                          |
 | 4   | A2   | [@AI](https://github.com/tanishq-singh-2301/tic-tac-toe-readme) |

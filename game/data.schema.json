@@ -48,6 +48,16 @@
         },
         "whoWon": {
             "enum": ["1", "0", ""]
+        },
+        "movableMoves": {
+            "type": "array",
+            "minItems": 0,
+            "maxItems": 9,
+            "items": [
+                {
+                    "type": "string"
+                }
+            ]
         }
     },
     "required": ["name", "mode", "mesh", "movesHistory", "whoWon"]
