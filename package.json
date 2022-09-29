@@ -1,6 +1,0 @@
-{
-    "dependencies": { "tic-tac-toe-ts": "^1.0.2" },
-    "devDependencies": {
-        "@types/node": "^18.7.23"
-    }
-}
