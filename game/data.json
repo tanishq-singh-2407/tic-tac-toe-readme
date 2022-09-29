@@ -1,0 +1,24 @@
+{
+    "$schema": "./data.schema.json",
+    "name": "tic-tac-toe",
+    "mode": "running",
+    "mesh": [
+        [
+            "",
+            "",
+            ""
+        ],
+        [
+            "",
+            "",
+            ""
+        ],
+        [
+            "",
+            "",
+            ""
+        ]
+    ],
+    "movesHistory": [],
+    "whoWon": ""
+}

@@ -21,5 +21,9 @@
     "editor.wordWrap": "off",
     "[markdown]": {
         "editor.wordWrap": "off"
-    }
+    },
+    "prettier.tabWidth": 4,
+    "prettier.useTabs": true,
+    "deno.enable": true,
+    "deno.lint": true
 }

@@ -1,0 +1,54 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string"
+        },
+        "mode": {
+            "type": "string",
+            "enum": ["running", "finished"]
+        },
+        "mesh": {
+            "type": "array",
+            "minItems": 3,
+            "maxItems": 3,
+            "items": [
+                {
+                    "type": "array",
+                    "minItems": 3,
+                    "maxItems": 3,
+                    "items": [
+                        {
+                            "enum": ["", 1, 0]
+                        }
+                    ]
+                }
+            ]
+        },
+        "movesHistory": {
+            "type": "array",
+            "items": [
+                {
+                    "type": "object",
+                    "properties": {
+                        "name": {
+                            "type": "string"
+                        },
+                        "url": {
+                            "type": "string"
+                        },
+                        "moveTo": {
+                            "type": "string"
+                        }
+                    },
+                    "required": ["name", "url", "moveTo"]
+                }
+            ]
+        },
+        "whoWon": {
+            "enum": ["1", "0", ""]
+        }
+    },
+    "required": ["name", "mode", "mesh", "movesHistory", "whoWon"]
+}
