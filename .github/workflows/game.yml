@@ -66,13 +66,13 @@ jobs:
             echo "HELLO=TEST_buddy_TEST" >> $GITHUB_ENV
 
       - name: Making your move
-		run: |
+        run: |
             deno run --reload src/index.ts
-		    deno run --allow-read --allow-write src/index.ts --game --name="$EVENT_USER_NAME" --url="$EVENT_USER_URL" --moveTo="$MOVE" --slf="$SLF"
+            deno run --allow-read --allow-write src/index.ts --game --name="$EVENT_USER_NAME" --url="$EVENT_USER_URL" --moveTo="$MOVE" --slf="$SLF"
 
       - name: Updating README.md
-		run: |
-		    chmod +x .husky/repo-update.sh
+        run: |
+            chmod +x .husky/repo-update.sh
             bash .husky/repo-update.sh
 
       - name: Issue Resolved
