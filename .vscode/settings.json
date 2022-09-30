@@ -26,7 +26,11 @@
 	"prettier.useTabs": true,
 	"deno.enable": true,
 	"deno.lint": true,
+    "deno.enablePaths": ["src", "types"],
 	"[yaml]": {
 		"editor.autoIndent": "none"
-	}
+	},
+    "github-actions.workflows.pinned.workflows": [
+        ".github/workflows/*.yml"
+    ]
 }
