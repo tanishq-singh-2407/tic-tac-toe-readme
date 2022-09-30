@@ -28,7 +28,6 @@ jobs:
       # Events triggered by the GITHUB_TOKEN will not create a new workflow run
       - name: Update Repo
         run: |
+            ls -ls .husky
             chmod +x .husky/repo-update.sh
             bash .husky/repo-update.sh
-
-            echo $HELLO
