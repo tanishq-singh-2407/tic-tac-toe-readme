@@ -5,14 +5,14 @@
     "mode": "running",
     "mesh": [
         [
-            "",
+            0,
             0,
             ""
         ],
         [
             "",
             1,
-            ""
+            1
         ],
         [
             "",
@@ -40,18 +40,26 @@
             "moveTo": "B1",
             "name": "AI",
             "url": "https://github.com/tanishq-singh-2301/tic-tac-toe-readme"
+        },
+        {
+            "moveTo": "C2",
+            "name": "tanishq-singh-2301",
+            "url": "https://github.com/tanishq-singh-2301"
+        },
+        {
+            "moveTo": "A1",
+            "name": "AI",
+            "url": "https://github.com/tanishq-singh-2301/tic-tac-toe-readme"
         }
     ],
     "movableMoves": [
-        "A1",
         "C1",
         "A2",
-        "C2",
         "A3"
     ],
     "whoWon": {
         "user": "",
         "array": []
     },
-    "slf": "'.'':'':."
+    "slf": "..''::':."
 }
