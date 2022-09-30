@@ -25,7 +25,7 @@ jobs:
           deno run --reload src/index.ts
           deno run --allow-read --allow-write src/index.ts --render
 
-	  # Events triggered by the GITHUB_TOKEN will not create a new workflow run
+      # Events triggered by the GITHUB_TOKEN will not create a new workflow run
       - name: Update Repo
         run: |
           git config --global user.name "Tanishq Singh"
