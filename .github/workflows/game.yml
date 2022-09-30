@@ -54,6 +54,8 @@ jobs:
             regex="^_ttt_move_[abcABC][123]_(|[:\'.]{9})_$"
 
             if [[ $title =~ $regex ]]; then
+                echo "Hey I'm here!!"
+
                 echo "MOVE=${title:10:2}" >> $GITHUB_ENV
                 echo "SLF=${title:13:9}" >> $GITHUB_ENV
             else
@@ -67,6 +69,10 @@ jobs:
 
       - name: Making your move
         run: |
+            echo $MOVE
+            echo $SLF
+            echo $EVENT_USER_NAME
+
             deno run --reload src/index.ts
             deno run --allow-read --allow-write src/index.ts --game --name="$EVENT_USER_NAME" --url="$EVENT_USER_URL" --moveTo="$MOVE" --slf="$SLF"
 
