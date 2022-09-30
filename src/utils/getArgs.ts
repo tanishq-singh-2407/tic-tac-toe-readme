@@ -11,12 +11,14 @@ export type Args = {
 };
 
 export const getArgs = () => {
-    const { moveTo, name, url, slf } = parse(Deno.args) as Args;
+    const { moveTo: tempMoveTo, name, url, slf } = parse(Deno.args) as Args;
     const game = new Game(
         data.mesh as Empty,
         data.movesHistory as MovesHistory[],
     );
     const movables = game.getMovableMoves();
+
+    const moveTo = tempMoveTo?.toUpperCase() as Moves;
 
     if (
         !moveTo ||
@@ -31,10 +33,10 @@ export const getArgs = () => {
     }
 
     return {
-        name,
-        moveTo,
-        url,
-        slf,
-        game,
+		name,
+		moveTo: moveTo.toUpperCase() as Moves,
+		url,
+		slf,
+		game,
     };
 };

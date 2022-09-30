@@ -78,7 +78,7 @@ jobs:
         run: |
             echo "$TITLE $NAME $URL"
 
-            bash .husky/move-update.sh $TITLE $NAME $URL
+            bash .husky/move-update.sh "$TITLE" "$NAME" "$URL"
             bash .husky/repo-update.sh
 
       - name: Issue Resolved
