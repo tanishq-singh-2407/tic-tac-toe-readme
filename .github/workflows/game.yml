@@ -48,22 +48,22 @@ jobs:
         with:
           deno-version: v1.x
 
-      # - name: Set env vars
-      #   run: |
-      #       title="${{ github.event.issue.title }}"
-      #       regex="^_ttt_move_[abcABC][123]_(|[:\'.]{9})_$"
+      - name: Set env vars
+        run: |
+            # title="${{ github.event.issue.title }}"
+            # regex="^_ttt_move_[abcABC][123]_(|[:\'.]{9})_$"
 
-      #       if [[ $title =~ $regex ]]; then
-      #           echo "MOVE=${title:10:2}" >> $GITHUB_ENV
-      #           echo "SLF=${title:13:-1}" >> $GITHUB_ENV
-      #       else
-      #           echo "Format got changed, it must follow '$regex'."
-      #           exit 1
-      #       fi
+            # if [[ $title =~ $regex ]]; then
+            #     echo "MOVE=${title:10:2}" >> $GITHUB_ENV
+            #     echo "SLF=${title:13:-1}" >> $GITHUB_ENV
+            # else
+            #     echo "Format got changed, it must follow '$regex'."
+            #     exit 1
+            # fi
 
-      #       echo "EVENT_USER_URL=${{ github.event.issue.user.html_url }}" >> $GITHUB_ENV
-      #       echo "EVENT_USER_NAME=${{ github.event.issue.user.login }}" >> $GITHUB_ENV
-      #       echo "HELLO=TEST_buddy_TEST" >> $GITHUB_ENV
+            echo "URL=${{ github.event.issue.user.html_url }}" >> $GITHUB_ENV
+            echo "NAME=${{ github.event.issue.user.login }}" >> $GITHUB_ENV
+            echo "TITLE=${{ github.event.issue.title }}" >> $GITHUB_ENV
 
       # - name: Making your move
       #   run: |
@@ -76,10 +76,14 @@ jobs:
 
       - name: Updating README.md
         run: |
+            ls -la
+
             chmod +x .husky/repo-update.sh
             chmod +x .husky/move-update.sh
 
-            bash .husky/move-update.sh
+            echo "$TITLE $NAME $URL"
+
+            bash .husky/move-update.sh $TITLE $NAME $URL
             bash .husky/repo-update.sh
 
       - name: Issue Resolved
