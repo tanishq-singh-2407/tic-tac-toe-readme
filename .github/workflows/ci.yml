@@ -30,6 +30,11 @@ jobs:
         run: |
             git config --global user.name "Tanishq Singh"
             git config --global user.email "tanishq-singh-2301@users.noreply.github.com"
-            # git add .
-            # git commit -m "CI: Updated data.json and README.md"
-            # git push
+            git add .
+            clean=$(git commit -m "CI: Updated data.json and README.md")
+            
+            if [[ ${clean} == *"nothing to commit"* ]]; then
+              exit 0
+            else
+              git push
+            fi
