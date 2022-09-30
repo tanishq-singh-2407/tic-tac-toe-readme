@@ -22,8 +22,8 @@ jobs:
 
       - name: Render with latest data
         run: |
-            deno run --reload src/index.ts
-            deno run --allow-read --allow-write src/index.ts --render
+          deno run --reload src/index.ts
+          deno run --allow-read --allow-write src/index.ts --render
 
 	  # Events triggered by the GITHUB_TOKEN will not create a new workflow run
       - name: Update Repo
