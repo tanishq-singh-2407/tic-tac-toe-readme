@@ -48,9 +48,9 @@ jobs:
         with:
           deno-version: v1.x
 
-      - run: Title echo ${{ github.event.issue.title }}
-      - run: User name echo ${{ github.event.issue.user.login }}
-      - run: User Url ${{ github.event.issue.user.html_url }}
+      - run: "Title echo ${{ github.event.issue.title }}"
+      - run: "User name echo ${{ github.event.issue.user.login }}"
+      - run: "User Url ${{ github.event.issue.user.html_url }}"
 
       - name: Issue Resolved
         uses: actions-cool/issues-helper@v3
