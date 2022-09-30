@@ -2,7 +2,7 @@
     "$schema": "./data.schema.json",
     "name": "tic-tac-toe",
     "no_of_games": 0,
-    "mode": "running",
+    "mode": "finished",
     "mesh": [
         [
             0,
@@ -42,16 +42,14 @@
             "url": "https://github.com/tanishq-singh-2301/tic-tac-toe-readme"
         }
     ],
-    "movableMoves": [
-        "C1",
-        "A2",
-        "B2",
-        "A3",
-        "B3"
-    ],
+    "movableMoves": [],
     "whoWon": {
-        "user": "",
-        "array": []
+        "user": "0",
+        "array": [
+            "A1",
+            "B1",
+            "C1"
+        ]
     },
-    "slf": "..''':'':"
+    "slf": "...'':'':"
 }
