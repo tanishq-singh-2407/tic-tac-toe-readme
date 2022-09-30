@@ -54,6 +54,7 @@ jobs:
           regex="^_ttt_move_[abcABC][123]_[:\'.]{9}_$"
 
           if [[ $title =~ $regex ]]; then
+<<<<<<< HEAD
               echo "MOVE=${title:10:2}" >> $GITHUB_ENV
               echo "SLF=${title:13:9}" >> $GITHUB_ENV
           else
