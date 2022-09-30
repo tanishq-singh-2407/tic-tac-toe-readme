@@ -5,6 +5,9 @@
         "name": {
             "type": "string"
         },
+        "no_of_games":{
+            "type": "number"
+        },
         "mode": {
             "type": "string",
             "enum": ["running", "finished"]
@@ -83,6 +86,7 @@
         "movesHistory",
         "whoWon",
         "movableMoves",
-        "slf"
+        "slf",
+        "no_of_games"
     ]
 }

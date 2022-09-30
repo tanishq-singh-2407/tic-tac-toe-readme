@@ -7,11 +7,11 @@ export type MovesHistory = {
 };
 
 export type DataJson = {
-    name: string;
-    mode: "running" | "finished";
-    mesh: Empty;
-    movesHistory: MovesHistory[];
-    movableMoves: Moves[];
-    whoWon: "" | "1" | "0";
-    slf: string;
+	name: string;
+	mode: "running" | "finished";
+	mesh: Empty;
+	movesHistory: MovesHistory[];
+	movableMoves: Moves[];
+	whoWon: { user: "0" | "1" | "2" | "" | unknown; array: Moves[] };
+	slf: string;
 };

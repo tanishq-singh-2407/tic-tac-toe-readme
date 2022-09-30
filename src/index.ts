@@ -14,7 +14,7 @@ const dataFilePath = "./game/data.json";
 if (!(game.getMovableMoves().length > 0)) {
     game.clear();
 
-    data.mesh = init as any;
+    data.mesh = init as (string | number)[][];
     data.mode = "running";
     data.movesHistory = [];
     data.whoWon = { user: "", array: [] };
@@ -35,23 +35,19 @@ if (userMove.mode === "Running") { // Game is still on
         url: "https://github.com/tanishq-singh-2301/tic-tac-toe-readme",
     });
 
-    if (aiMove.mode === "Running") {
-        data.movableMoves = game.getMovableMoves() as never[];
-    } else data.whoWon = aiMove.whoWon as { user: string; array: never[] };
+    if (aiMove.mode === "Running") data.movableMoves = game.getMovableMoves() as never[];
+    else data.whoWon = aiMove.whoWon as { user: string; array: never[] };
 } else data.whoWon = userMove.whoWon as { user: string; array: never[] };
 
 if (data.whoWon.user !== "") {
     data.mode = "finished";
+    data.no_of_games += 1;
     data.movableMoves = [];
 }
 
-data.mesh = game.mesh as any;
+data.mesh = game.mesh as (string | number)[][];
 data.movesHistory = game.movesHistory as never[];
 data.slf = game.getSLF();
 
-await Deno.writeTextFile(
-    dataFilePath,
-    JSON.stringify(data, null, 4),
-);
-
-await renderReadme(game, data as unknown as DataJson, "./README.md");
+await Deno.writeTextFile(dataFilePath,JSON.stringify(data, null, 4),);
+await renderReadme(data as unknown as DataJson, "./README.md");

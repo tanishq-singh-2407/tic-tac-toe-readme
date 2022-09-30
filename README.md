@@ -1,17 +1,24 @@
 # tic-tac-toe-readme
 
-**Game is in progress.** This is open to ANYONE to play the next move. That's the point. :wave: It's your turn! Move a 'X' piece.
+**Game is in progress.** This is open to ANYONE to play the next move. That's the point. wave: It's your turn! Put a 'X'.
 
 
 
 ||A|B|C|
 |-|:-:|:-:|:-:|
-|**1**|![](./images/green/0.png)|![](./images/green/0.png)|![](./images/green/1.png)|
-|**2**|![](./images/green/blank.png)|![](./images/green/blank.png)|![](./images/green/1.png)|
-|**3**|![](./images/green/blank.png)|![](./images/green/blank.png)|![](./images/green/1.png)|
+|**1**|![](./images/green/0.png)|![](./images/green/0.png)|![](./images/yellow/1.png)|
+|**2**|![](./images/green/blank.png)|![](./images/green/blank.png)|![](./images/yellow/1.png)|
+|**3**|![](./images/green/blank.png)|![](./images/green/blank.png)|![](./images/yellow/1.png)|
 
 
-#### **X:** It's your move... to choose _where_ to move...
+### **Who is what?**
+
+|Piece|who|
+|-|-|
+|**X**|You|
+|**Y**|Computer|
+
+### **It's your turn... make a _move_...**
 
 |FROM|TO - _just click one of the links_ :)|
 |-|-|

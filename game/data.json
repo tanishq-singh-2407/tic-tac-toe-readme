@@ -1,6 +1,7 @@
 {
     "$schema": "./data.schema.json",
     "name": "tic-tac-toe",
+    "no_of_games": 0,
     "mode": "finished",
     "mesh": [
         [
