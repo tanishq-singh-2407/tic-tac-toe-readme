@@ -47,7 +47,20 @@
             ]
         },
         "whoWon": {
-            "enum": ["1", "0", ""]
+            "type": "object",
+            "properties": {
+                "user": {
+                    "type": "string",
+                    "enum": ["", "0", "1", "2"]
+                },
+                "array": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            },
+            "required": ["user", "array"]
         },
         "movableMoves": {
             "type": "array",
@@ -58,7 +71,18 @@
                     "type": "string"
                 }
             ]
+        },
+        "slf": {
+            "type": "string"
         }
     },
-    "required": ["name", "mode", "mesh", "movesHistory", "whoWon"]
+    "required": [
+        "name",
+        "mode",
+        "mesh",
+        "movesHistory",
+        "whoWon",
+        "movableMoves",
+        "slf"
+    ]
 }

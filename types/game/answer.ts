@@ -7,6 +7,6 @@ export type Answer = {
     mesh: Empty;
     message?: string;
     body?: string;
-    whoWon: "" | 1 | 0;
+    whoWon: { user: "0" | "1" | "2" | "" | unknown; array: Moves[] };
     movedTo: Moves;
 };
