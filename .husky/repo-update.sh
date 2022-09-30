@@ -7,9 +7,7 @@ git add .
 clean=$(git commit -m "CI: Updated data.json and README.md")
 
 if [[ ${clean} == *"nothing to commit"* ]]; then
-    # exit 0
-    echo "asdf"
+    echo "README.md already up to date."
 else
-    # git push
-    echo "kjh"
+    git push
 fi
