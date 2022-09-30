@@ -6,6 +6,8 @@ git add .
 
 clean=$(git commit -m "CI: Updated data.json and README.md")
 
+echo $HELLO
+
 if [[ ${clean} == *"nothing to commit"* ]]; then
     echo "README.md already up to date."
 else

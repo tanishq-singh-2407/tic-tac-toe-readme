@@ -48,11 +48,35 @@ jobs:
         with:
           deno-version: v1.x
 
-      - run: echo "Title echo ${{ github.event.issue.title }}"
-      - run: echo "User name echo ${{ github.event.issue.user.login }}"
-      - run: echo "User Url ${{ github.event.issue.user.html_url }}"
+      - name: Set env vars
+        run: |
+          title=${{ github.event.issue.title }}
+          regex="^_ttt_move_[abcABC][123]_[:\'.]{9}_$"
+
+          if [[ $title =~ $regex ]]; then
+            echo "MOVE=${title:10:2}" >> $GITHUB_ENV
+            echo "SLF=${title:13:9}" >> $GITHUB_ENV
+          else
+            echo "Format got changed, it must follow '$regex'."
+						exit 1
+          fi
+
+          echo "EVENT_USER_URL=${{ github.event.issue.user.html_url }}" >> $GITHUB_ENV
+          echo "EVENT_USER_NAME=${{ github.event.issue.user.login }}" >> $GITHUB_ENV
+					echo "HELLO=TEST_buddy_TEST" >> $GITHUB_ENV
+
+      - name: Making your move
+				run: |
+          deno run --reload src/index.ts
+					deno run --allow-read --allow-write src/index.ts --game --name="$EVENT_USER_NAME" --url="$EVENT_USER_URL" --moveTo="$MOVE" --slf="$SLF"
+
+			- name: Updating README.md
+				run: |
+					chmod +x .husky/repo-update.sh
+          bash .husky/repo-update.sh
 
       - name: Issue Resolved
+        if: ${{ always() }}
         uses: actions-cool/issues-helper@v3
         with:
           actions: 'update-issue'
