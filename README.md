@@ -6,9 +6,9 @@
 
 ||A|B|C|
 |-|:-:|:-:|:-:|
-|**1**|![](./images/green/blank.png)|![](./images/green/blank.png)|![](./images/green/blank.png)|
+|**1**|![](./images/green/blank.png)|![](./images/green/blank.png)|![](./images/green/1.png)|
 |**2**|![](./images/green/0.png)|![](./images/green/1.png)|![](./images/green/blank.png)|
-|**3**|![](./images/green/blank.png)|![](./images/green/blank.png)|![](./images/green/blank.png)|
+|**3**|![](./images/green/blank.png)|![](./images/green/blank.png)|![](./images/green/0.png)|
 
 
 ### **Who is what?**
@@ -22,13 +22,11 @@
 
 |FROM|TO - _just click one of the links_ :)|
 |-|-|
-|**1**|<a target="_blank" rel="noopener" href="https://github.com/tanishq-singh-2301/tic-tac-toe-readme/issues/new?title=_ttt_move_a1_'''.:''''_&labels=make+move&body=Jush+push+'Submit+new+issue'.+You+don't+need+to+do+anything+else.">A1</a>|
-|**2**|<a target="_blank" rel="noopener" href="https://github.com/tanishq-singh-2301/tic-tac-toe-readme/issues/new?title=_ttt_move_b1_'''.:''''_&labels=make+move&body=Jush+push+'Submit+new+issue'.+You+don't+need+to+do+anything+else.">B1</a>|
-|**3**|<a target="_blank" rel="noopener" href="https://github.com/tanishq-singh-2301/tic-tac-toe-readme/issues/new?title=_ttt_move_c1_'''.:''''_&labels=make+move&body=Jush+push+'Submit+new+issue'.+You+don't+need+to+do+anything+else.">C1</a>|
-|**4**|<a target="_blank" rel="noopener" href="https://github.com/tanishq-singh-2301/tic-tac-toe-readme/issues/new?title=_ttt_move_c2_'''.:''''_&labels=make+move&body=Jush+push+'Submit+new+issue'.+You+don't+need+to+do+anything+else.">C2</a>|
-|**5**|<a target="_blank" rel="noopener" href="https://github.com/tanishq-singh-2301/tic-tac-toe-readme/issues/new?title=_ttt_move_a3_'''.:''''_&labels=make+move&body=Jush+push+'Submit+new+issue'.+You+don't+need+to+do+anything+else.">A3</a>|
-|**6**|<a target="_blank" rel="noopener" href="https://github.com/tanishq-singh-2301/tic-tac-toe-readme/issues/new?title=_ttt_move_b3_'''.:''''_&labels=make+move&body=Jush+push+'Submit+new+issue'.+You+don't+need+to+do+anything+else.">B3</a>|
-|**7**|<a target="_blank" rel="noopener" href="https://github.com/tanishq-singh-2301/tic-tac-toe-readme/issues/new?title=_ttt_move_c3_'''.:''''_&labels=make+move&body=Jush+push+'Submit+new+issue'.+You+don't+need+to+do+anything+else.">C3</a>|
+|**1**|<a target="_blank" rel="noopener" href="https://github.com/tanishq-singh-2301/tic-tac-toe-readme/issues/new?title=_ttt_move_a1_'':.:'''._&labels=make+move&body=Jush+push+'Submit+new+issue'.+You+don't+need+to+do+anything+else.">A1</a>|
+|**2**|<a target="_blank" rel="noopener" href="https://github.com/tanishq-singh-2301/tic-tac-toe-readme/issues/new?title=_ttt_move_b1_'':.:'''._&labels=make+move&body=Jush+push+'Submit+new+issue'.+You+don't+need+to+do+anything+else.">B1</a>|
+|**3**|<a target="_blank" rel="noopener" href="https://github.com/tanishq-singh-2301/tic-tac-toe-readme/issues/new?title=_ttt_move_c2_'':.:'''._&labels=make+move&body=Jush+push+'Submit+new+issue'.+You+don't+need+to+do+anything+else.">C2</a>|
+|**4**|<a target="_blank" rel="noopener" href="https://github.com/tanishq-singh-2301/tic-tac-toe-readme/issues/new?title=_ttt_move_a3_'':.:'''._&labels=make+move&body=Jush+push+'Submit+new+issue'.+You+don't+need+to+do+anything+else.">A3</a>|
+|**5**|<a target="_blank" rel="noopener" href="https://github.com/tanishq-singh-2301/tic-tac-toe-readme/issues/new?title=_ttt_move_b3_'':.:'''._&labels=make+move&body=Jush+push+'Submit+new+issue'.+You+don't+need+to+do+anything+else.">B3</a>|
 
 
 **How this works**
@@ -47,3 +45,5 @@ Raise an [issue](https://github.com/timburgan/timburgan/issues), and include the
 |-|-|-|
 |1|B2|[@tanishq-singh-2301](https://github.com/tanishq-singh-2301)|
 |2|A2|[@AI](https://github.com/tanishq-singh-2301/tic-tac-toe-readme)|
+|3|C1|[@tanishq-singh-2301](https://github.com/tanishq-singh-2301)|
+|4|C3|[@AI](https://github.com/tanishq-singh-2301/tic-tac-toe-readme)|
