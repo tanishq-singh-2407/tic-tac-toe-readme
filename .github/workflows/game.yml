@@ -54,12 +54,11 @@ jobs:
           regex="^_ttt_move_[abcABC][123]_[:\'.]{9}_$"
 
           if [[ $title =~ $regex ]]; then
-            echo "MOVE=${title:10:2}" >> $GITHUB_ENV
+          	echo "MOVE=${title:10:2}" >> $GITHUB_ENV
             echo "SLF=${title:13:9}" >> $GITHUB_ENV
           else
-            echo "Format got changed, it must follow '$regex'."
-						exit 1
-          fi
+            echo "Format got changed, it must follow '$regex'." && exit 1
+					fi
 
           echo "EVENT_USER_URL=${{ github.event.issue.user.html_url }}" >> $GITHUB_ENV
           echo "EVENT_USER_NAME=${{ github.event.issue.user.login }}" >> $GITHUB_ENV
