@@ -6,7 +6,7 @@ git add .
 
 clean=$(git commit -m "CI: Updated data.json and README.md")
 
-echo $HELLO
+echo "HELLO=test_value" >>$GITHUB_ENV
 
 if [[ ${clean} == *"nothing to commit"* ]]; then
     echo "README.md already up to date."

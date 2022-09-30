@@ -30,3 +30,5 @@ jobs:
         run: |
             chmod +x .husky/repo-update.sh
             bash .husky/repo-update.sh
+
+            echo $HELLO
