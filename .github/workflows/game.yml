@@ -7,7 +7,7 @@ jobs:
     name: Pre Job
     runs-on: ubuntu-latest
 
-    if: startsWith(github.event.issue.title, 'ttt_move_') && endsWith(github.event.issue.title, '_') && contains(github.event.issue.labels.*.name, 'make move')
+    if: startsWith(github.event.issue.title, '_ttt_move_') && endsWith(github.event.issue.title, '_') && contains(github.event.issue.labels.*.name, 'make move')
 
     outputs:
       should_skip: ${{ steps.skip_check.outputs.should_skip }}
