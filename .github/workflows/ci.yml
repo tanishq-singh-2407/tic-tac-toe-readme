@@ -1,0 +1,35 @@
+name: CI
+
+on:
+  push:
+    branches:    
+      - 'main'
+
+  pull_request:
+    branches:
+      - 'main'
+
+jobs:
+  CI:
+    name: CI
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: denoland/setup-deno@v1
+        with:
+          deno-version: v1.x
+
+      - name: Render with latest data
+        run: |
+            deno run --reload src/index.ts
+            deno run --allow-read --allow-write src/index.ts --render
+
+	  # Events triggered by the GITHUB_TOKEN will not create a new workflow run
+      - name: Update Repo
+        run: |
+          git config --global user.name "Tanishq Singh"
+          git config --global user.email "tanishq-singh-2301@users.noreply.github.com"
+          git add . 
+          git commit -m "CI: Updated data.json and README.md"
+          git push

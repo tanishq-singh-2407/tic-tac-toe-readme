@@ -22,8 +22,6 @@ else if (render) {
 	data.movableMoves = game.getMovableMoves() as never[];
 	data.slf = game.getSLF();
 	data.whoWon = game.wond() as { user: string; array: never[] };
-
-    console.log(data);
     
     await Deno.writeTextFile(dataFilePath, JSON.stringify(data, null, 4));
 	await renderReadme(data as unknown as DataJson, "./README.md");
