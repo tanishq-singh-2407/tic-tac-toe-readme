@@ -76,11 +76,6 @@ jobs:
 
       - name: Updating README.md
         run: |
-            ls -ls .husky
-
-            chmod +x .husky/repo-update.sh
-            chmod +x .husky/move-update.sh
-
             echo "$TITLE $NAME $URL"
 
             bash .husky/move-update.sh $TITLE $NAME $URL
