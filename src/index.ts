@@ -1,53 +1,30 @@
 import data from "../game/data.json" assert { type: "json" };
-import type { DataJson } from "../types/index.ts";
-import { init } from "./constants/index.ts";
+import type { DataJson, Empty, MovesHistory } from "../types/index.ts";
 import { renderReadme } from "./renderer/index.ts";
-import { getArgs } from "./utils/getArgs.ts";
-import { getRandomArbitrary } from "./utils/index.ts";
+import { parse } from "https://deno.land/std@0.158.0/flags/mod.ts";
+import { RunGame } from "./game.ts";
+import { Game } from "./logic/index.ts";
 
-// deno run --allow-read --allow-write src/index.ts --name="Tanishq Singh" --url="https://github.com/tanishq-singh-2301" --moveTo="C2" --slf=""
-// deno fmt --options-indent-width 4
-
-const { moveTo, name, url, game } = getArgs();
 const dataFilePath = "./game/data.json";
+const { game, render } = parse(Deno.args);
 
-if (!(game.getMovableMoves().length > 0)) {
-    game.clear();
+// deno run --allow-read --allow-write src/index.ts --game --name="Tanishq Singh" --url="https://github.com/tanishq-singh-2301" --moveTo="C2" --slf=""
+if (game) await RunGame();
+    
+// deno run --allow-read --allow-write src/index.ts --render
+else if (render) {
+	const game = new Game(
+		data.mesh as Empty,
+		data.movesHistory as MovesHistory[]
+	);
 
-    data.mesh = init as (string | number)[][];
-    data.mode = "running";
-    data.movesHistory = [];
-    data.whoWon = { user: "", array: [] };
-    data.movableMoves = game.getMovableMoves() as never[];
-    data.slf = game.getSLF();
+	data.mode = game.wond().user === "" ? "running" : "finished";
+	data.movableMoves = game.getMovableMoves() as never[];
+	data.slf = game.getSLF();
+	data.whoWon = game.wond() as { user: string; array: never[] };
 
+    console.log(data);
+    
     await Deno.writeTextFile(dataFilePath, JSON.stringify(data, null, 4));
+	await renderReadme(data as unknown as DataJson, "./README.md");
 }
-
-const userMove = game.move({ name, url, user: 1, moveTo });
-
-if (userMove.mode === "Running") { // Game is still on
-    const moves = game.getMovableMoves();
-    const aiMove = game.move({
-        name: "AI",
-        moveTo: moves[getRandomArbitrary(0, moves.length)],
-        user: 0,
-        url: "https://github.com/tanishq-singh-2301/tic-tac-toe-readme",
-    });
-
-    if (aiMove.mode === "Running") data.movableMoves = game.getMovableMoves() as never[];
-    else data.whoWon = aiMove.whoWon as { user: string; array: never[] };
-} else data.whoWon = userMove.whoWon as { user: string; array: never[] };
-
-if (data.whoWon.user !== "") {
-    data.mode = "finished";
-    data.no_of_games += 1;
-    data.movableMoves = [];
-}
-
-data.mesh = game.mesh as (string | number)[][];
-data.movesHistory = game.movesHistory as never[];
-data.slf = game.getSLF();
-
-await Deno.writeTextFile(dataFilePath,JSON.stringify(data, null, 4),);
-await renderReadme(data as unknown as DataJson, "./README.md");

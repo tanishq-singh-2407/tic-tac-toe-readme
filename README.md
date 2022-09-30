@@ -6,22 +6,27 @@
 
 ||A|B|C|
 |-|:-:|:-:|:-:|
-|**1**|![](./images/green/0.png)|![](./images/green/0.png)|![](./images/yellow/1.png)|
-|**2**|![](./images/green/blank.png)|![](./images/green/blank.png)|![](./images/yellow/1.png)|
-|**3**|![](./images/green/blank.png)|![](./images/green/blank.png)|![](./images/yellow/1.png)|
+|**1**|![](./images/green/0.png)|![](./images/green/0.png)|![](./images/green/blank.png)|
+|**2**|![](./images/green/blank.png)|![](./images/green/blank.png)|![](./images/green/1.png)|
+|**3**|![](./images/green/blank.png)|![](./images/green/blank.png)|![](./images/green/1.png)|
 
 
 ### **Who is what?**
-
 |Piece|who|
 |-|-|
 |**X**|You|
 |**Y**|Computer|
 
+
 ### **It's your turn... make a _move_...**
 
 |FROM|TO - _just click one of the links_ :)|
 |-|-|
+|**1**|[C1](https://github.com/tanishq-singh-2301/tic-tac-toe-readme/issues/new?title=ttt%7move%7C1&body=Just+push+%27Submit+new+issue%27.+You+don%27t+need+to+do+anything+else.)|
+|**2**|[A2](https://github.com/tanishq-singh-2301/tic-tac-toe-readme/issues/new?title=ttt%7move%7A2&body=Just+push+%27Submit+new+issue%27.+You+don%27t+need+to+do+anything+else.)|
+|**3**|[B2](https://github.com/tanishq-singh-2301/tic-tac-toe-readme/issues/new?title=ttt%7move%7B2&body=Just+push+%27Submit+new+issue%27.+You+don%27t+need+to+do+anything+else.)|
+|**4**|[A3](https://github.com/tanishq-singh-2301/tic-tac-toe-readme/issues/new?title=ttt%7move%7A3&body=Just+push+%27Submit+new+issue%27.+You+don%27t+need+to+do+anything+else.)|
+|**5**|[B3](https://github.com/tanishq-singh-2301/tic-tac-toe-readme/issues/new?title=ttt%7move%7B3&body=Just+push+%27Submit+new+issue%27.+You+don%27t+need+to+do+anything+else.)|
 
 
 **How this works**
@@ -42,4 +47,3 @@ Raise an [issue](https://github.com/timburgan/timburgan/issues), and include the
 |2|B1|[@AI](https://github.com/tanishq-singh-2301/tic-tac-toe-readme)|
 |3|C3|[@Tanishq Singh](https://github.com/tanishq-singh-2301)|
 |4|A1|[@AI](https://github.com/tanishq-singh-2301/tic-tac-toe-readme)|
-|5|C1|[@Tanishq Singh](https://github.com/tanishq-singh-2301)|
