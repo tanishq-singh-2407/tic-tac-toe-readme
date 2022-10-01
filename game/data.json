@@ -1,11 +1,11 @@
 {
     "$schema": "./data.schema.json",
     "name": "tic-tac-toe",
-    "no_of_games": 2,
-    "mode": "running",
+    "no_of_games": 3,
+    "mode": "finished",
     "mesh": [
         [
-            "",
+            1,
             1,
             1
         ],
@@ -40,18 +40,21 @@
             "moveTo": "A3",
             "name": "AI",
             "url": "https://github.com/tanishq-singh-2301/tic-tac-toe-readme"
+        },
+        {
+            "moveTo": "A1",
+            "name": "afuu21",
+            "url": "https://github.com/afuu21"
         }
     ],
-    "movableMoves": [
-        "A1",
-        "A2",
-        "B2",
-        "C2",
-        "B3"
-    ],
+    "movableMoves": [],
     "whoWon": {
-        "user": "",
-        "array": []
+        "user": "1",
+        "array": [
+            "A1",
+            "B1",
+            "C1"
+        ]
     },
-    "slf": "'::'''.'."
+    "slf": ":::'''.'."
 }
