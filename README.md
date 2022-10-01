@@ -1,14 +1,14 @@
 # tic-tac-toe-readme
 
-**Game is in progress.** This is open to ANYONE to play the next move. That's the point. wave: It's your turn! Put a 'X'.
+**One more game is finished.** This is open to ANYONE to play the next move. That's the point. wave: It's your turn! Put a 'X'.
 
 
 
 ||A|B|C|
 |-|:-:|:-:|:-:|
-|**1**|![](./images/green/blank.png)|![](./images/green/blank.png)|![](./images/green/1.png)|
-|**2**|![](./images/green/0.png)|![](./images/green/1.png)|![](./images/green/blank.png)|
-|**3**|![](./images/green/blank.png)|![](./images/green/blank.png)|![](./images/green/0.png)|
+|**1**|![](./images/green/blank.png)|![](./images/green/blank.png)|![](./images/yellow/1.png)|
+|**2**|![](./images/green/0.png)|![](./images/yellow/1.png)|![](./images/green/blank.png)|
+|**3**|![](./images/yellow/1.png)|![](./images/green/blank.png)|![](./images/green/0.png)|
 
 
 ### **Who is what?**
@@ -18,15 +18,19 @@
 |**Y**|Computer|
 
 
-### **It's your turn... make a _move_...**
+### **Start a new game... make a _move_...**
 
 |FROM|TO - _just click one of the links_ :)|
 |-|-|
-|**1**|<a target="_blank" rel="noopener" href="https://github.com/tanishq-singh-2301/tic-tac-toe-readme/issues/new?title=_ttt_move_a1_'':.:'''._&labels=make+move&body=Jush+push+'Submit+new+issue'.+You+don't+need+to+do+anything+else.">A1</a>|
-|**2**|<a target="_blank" rel="noopener" href="https://github.com/tanishq-singh-2301/tic-tac-toe-readme/issues/new?title=_ttt_move_b1_'':.:'''._&labels=make+move&body=Jush+push+'Submit+new+issue'.+You+don't+need+to+do+anything+else.">B1</a>|
-|**3**|<a target="_blank" rel="noopener" href="https://github.com/tanishq-singh-2301/tic-tac-toe-readme/issues/new?title=_ttt_move_c2_'':.:'''._&labels=make+move&body=Jush+push+'Submit+new+issue'.+You+don't+need+to+do+anything+else.">C2</a>|
-|**4**|<a target="_blank" rel="noopener" href="https://github.com/tanishq-singh-2301/tic-tac-toe-readme/issues/new?title=_ttt_move_a3_'':.:'''._&labels=make+move&body=Jush+push+'Submit+new+issue'.+You+don't+need+to+do+anything+else.">A3</a>|
-|**5**|<a target="_blank" rel="noopener" href="https://github.com/tanishq-singh-2301/tic-tac-toe-readme/issues/new?title=_ttt_move_b3_'':.:'''._&labels=make+move&body=Jush+push+'Submit+new+issue'.+You+don't+need+to+do+anything+else.">B3</a>|
+|**1**|<a target="_blank" rel="noopener" href="https://github.com/tanishq-singh-2301/tic-tac-toe-readme/issues/new?title=_ttt_move_a1__&labels=make+move&body=Jush+push+'Submit+new+issue'.+You+don't+need+to+do+anything+else.">A1</a>|
+|**2**|<a target="_blank" rel="noopener" href="https://github.com/tanishq-singh-2301/tic-tac-toe-readme/issues/new?title=_ttt_move_a2__&labels=make+move&body=Jush+push+'Submit+new+issue'.+You+don't+need+to+do+anything+else.">A2</a>|
+|**3**|<a target="_blank" rel="noopener" href="https://github.com/tanishq-singh-2301/tic-tac-toe-readme/issues/new?title=_ttt_move_a3__&labels=make+move&body=Jush+push+'Submit+new+issue'.+You+don't+need+to+do+anything+else.">A3</a>|
+|**4**|<a target="_blank" rel="noopener" href="https://github.com/tanishq-singh-2301/tic-tac-toe-readme/issues/new?title=_ttt_move_b1__&labels=make+move&body=Jush+push+'Submit+new+issue'.+You+don't+need+to+do+anything+else.">B1</a>|
+|**5**|<a target="_blank" rel="noopener" href="https://github.com/tanishq-singh-2301/tic-tac-toe-readme/issues/new?title=_ttt_move_b2__&labels=make+move&body=Jush+push+'Submit+new+issue'.+You+don't+need+to+do+anything+else.">B2</a>|
+|**6**|<a target="_blank" rel="noopener" href="https://github.com/tanishq-singh-2301/tic-tac-toe-readme/issues/new?title=_ttt_move_b3__&labels=make+move&body=Jush+push+'Submit+new+issue'.+You+don't+need+to+do+anything+else.">B3</a>|
+|**7**|<a target="_blank" rel="noopener" href="https://github.com/tanishq-singh-2301/tic-tac-toe-readme/issues/new?title=_ttt_move_c1__&labels=make+move&body=Jush+push+'Submit+new+issue'.+You+don't+need+to+do+anything+else.">C1</a>|
+|**8**|<a target="_blank" rel="noopener" href="https://github.com/tanishq-singh-2301/tic-tac-toe-readme/issues/new?title=_ttt_move_c2__&labels=make+move&body=Jush+push+'Submit+new+issue'.+You+don't+need+to+do+anything+else.">C2</a>|
+|**9**|<a target="_blank" rel="noopener" href="https://github.com/tanishq-singh-2301/tic-tac-toe-readme/issues/new?title=_ttt_move_c3__&labels=make+move&body=Jush+push+'Submit+new+issue'.+You+don't+need+to+do+anything+else.">C3</a>|
 
 
 **How this works**
@@ -47,3 +51,4 @@ Raise an [issue](https://github.com/timburgan/timburgan/issues), and include the
 |2|A2|[@AI](https://github.com/tanishq-singh-2301/tic-tac-toe-readme)|
 |3|C1|[@tanishq-singh-2301](https://github.com/tanishq-singh-2301)|
 |4|C3|[@AI](https://github.com/tanishq-singh-2301/tic-tac-toe-readme)|
+|5|A3|[@afuu21](https://github.com/afuu21)|
