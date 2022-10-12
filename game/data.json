@@ -6,13 +6,13 @@
     "mesh": [
         [
             0,
-            "",
+            0,
             ""
         ],
         [
             "",
             "",
-            ""
+            1
         ],
         [
             "",
@@ -30,14 +30,22 @@
             "moveTo": "A1",
             "name": "AI",
             "url": "https://github.com/tanishq-singh-2301/tic-tac-toe-readme"
+        },
+        {
+            "moveTo": "C2",
+            "name": "niwdE-JA",
+            "url": "https://github.com/niwdE-JA"
+        },
+        {
+            "moveTo": "B1",
+            "name": "AI",
+            "url": "https://github.com/tanishq-singh-2301/tic-tac-toe-readme"
         }
     ],
     "movableMoves": [
-        "B1",
         "C1",
         "A2",
         "B2",
-        "C2",
         "A3",
         "B3"
     ],
@@ -45,5 +53,5 @@
         "user": "",
         "array": []
     },
-    "slf": ".''''''':"
+    "slf": "..''':'':"
 }
