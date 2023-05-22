@@ -2,69 +2,48 @@
     "$schema": "./data.schema.json",
     "name": "tic-tac-toe",
     "no_of_games": 10,
-    "mode": "finished",
+    "mode": "running",
     "mesh": [
         [
-            1,
-            1,
-            1
-        ],
-        [
-            1,
-            0,
-            ""
+            "",
+            "",
+            0
         ],
         [
             "",
-            0,
-            0
+            "",
+            ""
+        ],
+        [
+            1,
+            "",
+            ""
         ]
     ],
     "movesHistory": [
         {
-            "moveTo": "A2",
-            "name": "Gokul-Nath-27",
-            "url": "https://github.com/Gokul-Nath-27"
-        },
-        {
-            "moveTo": "B2",
-            "name": "AI",
-            "url": "https://github.com/tanishq-singh-2301/tic-tac-toe-readme"
-        },
-        {
-            "moveTo": "A1",
-            "name": "miguelow",
-            "url": "https://github.com/miguelow"
-        },
-        {
-            "moveTo": "C3",
-            "name": "AI",
-            "url": "https://github.com/tanishq-singh-2301/tic-tac-toe-readme"
-        },
-        {
-            "moveTo": "B1",
-            "name": "simrasheikh",
-            "url": "https://github.com/simrasheikh"
-        },
-        {
-            "moveTo": "B3",
-            "name": "AI",
-            "url": "https://github.com/tanishq-singh-2301/tic-tac-toe-readme"
+            "moveTo": "A3",
+            "name": "s1ddhantsingh",
+            "url": "https://github.com/s1ddhantsingh"
         },
         {
             "moveTo": "C1",
-            "name": "apilsamrat",
-            "url": "https://github.com/apilsamrat"
+            "name": "AI",
+            "url": "https://github.com/tanishq-singh-2301/tic-tac-toe-readme"
         }
     ],
-    "movableMoves": [],
+    "movableMoves": [
+        "A1",
+        "B1",
+        "A2",
+        "B2",
+        "C2",
+        "B3",
+        "C3"
+    ],
     "whoWon": {
-        "user": "1",
-        "array": [
-            "A1",
-            "B1",
-            "C1"
-        ]
+        "user": "",
+        "array": []
     },
-    "slf": "::::.''.."
+    "slf": "''.''':''"
 }
