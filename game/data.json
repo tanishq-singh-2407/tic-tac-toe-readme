@@ -2,75 +2,48 @@
     "$schema": "./data.schema.json",
     "name": "tic-tac-toe",
     "no_of_games": 11,
-    "mode": "finished",
+    "mode": "running",
     "mesh": [
         [
-            1,
-            1,
+            "",
+            "",
+            ""
+        ],
+        [
+            "",
+            "",
             0
         ],
         [
-            0,
             1,
-            1
-        ],
-        [
-            1,
-            0,
-            0
+            "",
+            ""
         ]
     ],
     "movesHistory": [
         {
             "moveTo": "A3",
-            "name": "s1ddhantsingh",
-            "url": "https://github.com/s1ddhantsingh"
-        },
-        {
-            "moveTo": "C1",
-            "name": "AI",
-            "url": "https://github.com/tanishq-singh-2301/tic-tac-toe-readme"
-        },
-        {
-            "moveTo": "A1",
-            "name": "Gabriela1DC",
-            "url": "https://github.com/Gabriela1DC"
-        },
-        {
-            "moveTo": "A2",
-            "name": "AI",
-            "url": "https://github.com/tanishq-singh-2301/tic-tac-toe-readme"
-        },
-        {
-            "moveTo": "B2",
-            "name": "lulunac27a",
-            "url": "https://github.com/lulunac27a"
-        },
-        {
-            "moveTo": "C3",
-            "name": "AI",
-            "url": "https://github.com/tanishq-singh-2301/tic-tac-toe-readme"
+            "name": "Saipraneeth99",
+            "url": "https://github.com/Saipraneeth99"
         },
         {
             "moveTo": "C2",
-            "name": "Saipraneeth99",
-            "url": "https://github.com/Saipraneeth99"
-        },
-        {
-            "moveTo": "B3",
             "name": "AI",
             "url": "https://github.com/tanishq-singh-2301/tic-tac-toe-readme"
-        },
-        {
-            "moveTo": "B1",
-            "name": "Saipraneeth99",
-            "url": "https://github.com/Saipraneeth99"
         }
     ],
-    "movableMoves": [],
+    "movableMoves": [
+        "A1",
+        "B1",
+        "C1",
+        "A2",
+        "B2",
+        "B3",
+        "C3"
+    ],
     "whoWon": {
-        "user": "2",
+        "user": "",
         "array": []
     },
-    "slf": "::..:::.."
+    "slf": "'''''.:''"
 }
