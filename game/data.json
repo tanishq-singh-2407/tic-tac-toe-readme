@@ -2,59 +2,48 @@
     "$schema": "./data.schema.json",
     "name": "tic-tac-toe",
     "no_of_games": 12,
-    "mode": "finished",
+    "mode": "running",
     "mesh": [
         [
+            1,
             "",
-            "",
-            0
+            ""
         ],
         [
             "",
             "",
-            0
+            ""
         ],
         [
-            1,
-            1,
-            1
+            "",
+            0,
+            ""
         ]
     ],
     "movesHistory": [
         {
-            "moveTo": "A3",
-            "name": "Saipraneeth99",
-            "url": "https://github.com/Saipraneeth99"
-        },
-        {
-            "moveTo": "C2",
-            "name": "AI",
-            "url": "https://github.com/tanishq-singh-2301/tic-tac-toe-readme"
-        },
-        {
-            "moveTo": "C3",
-            "name": "Saipraneeth99",
-            "url": "https://github.com/Saipraneeth99"
-        },
-        {
-            "moveTo": "C1",
-            "name": "AI",
-            "url": "https://github.com/tanishq-singh-2301/tic-tac-toe-readme"
+            "moveTo": "A1",
+            "name": "zaidk2021",
+            "url": "https://github.com/zaidk2021"
         },
         {
             "moveTo": "B3",
-            "name": "Saipraneeth99",
-            "url": "https://github.com/Saipraneeth99"
+            "name": "AI",
+            "url": "https://github.com/tanishq-singh-2301/tic-tac-toe-readme"
         }
     ],
-    "movableMoves": [],
+    "movableMoves": [
+        "B1",
+        "C1",
+        "A2",
+        "B2",
+        "C2",
+        "A3",
+        "C3"
+    ],
     "whoWon": {
-        "user": "1",
-        "array": [
-            "A3",
-            "B3",
-            "C3"
-        ]
+        "user": "",
+        "array": []
     },
-    "slf": "''.''.:::"
+    "slf": ":''''''.'"
 }
