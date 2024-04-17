@@ -11,11 +11,11 @@
         ],
         [
             "",
-            "",
+            1,
             ""
         ],
         [
-            "",
+            0,
             0,
             ""
         ]
@@ -30,20 +30,28 @@
             "moveTo": "B3",
             "name": "AI",
             "url": "https://github.com/tanishq-singh-2301/tic-tac-toe-readme"
+        },
+        {
+            "moveTo": "B2",
+            "name": "ahujaesh",
+            "url": "https://github.com/ahujaesh"
+        },
+        {
+            "moveTo": "A3",
+            "name": "AI",
+            "url": "https://github.com/tanishq-singh-2301/tic-tac-toe-readme"
         }
     ],
     "movableMoves": [
         "B1",
         "C1",
         "A2",
-        "B2",
         "C2",
-        "A3",
         "C3"
     ],
     "whoWon": {
         "user": "",
         "array": []
     },
-    "slf": ":''''''.'"
+    "slf": ":''':'..'"
 }
